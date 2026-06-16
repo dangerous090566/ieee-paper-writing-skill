@@ -1,0 +1,4 @@
+interface:
+  display_name: "IEEE Paper Writing"
+  short_description: "Write, polish, and validate IEEE-style engineering papers."
+  default_prompt: "Help me write, polish, format, or check an IEEE engineering paper."
