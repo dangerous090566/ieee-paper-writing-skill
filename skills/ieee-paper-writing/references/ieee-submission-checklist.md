@@ -34,6 +34,7 @@ Hard rule: the target venue's official current template and author instructions 
 - Acronyms are defined at first use.
 - Units follow consistent SI or venue-accepted conventions.
 - All labels and references compile without `??`.
+- In camera-ready author blocks, name order labels, affiliation wording, font size, italics, and upright location/email lines match the supplied template in the rendered PDF.
 
 ## Figures and Tables
 
@@ -43,6 +44,7 @@ Hard rule: the target venue's official current template and author instructions 
 - Figure files meet venue resolution and format requirements.
 - Color is not the only way to distinguish key information.
 - Tables fit the column/page width without tiny fonts.
+- On the rendered pages, each figure/table falls before or after a complete paragraph; a top float must not separate text carried over from the previous page. Captions remain attached to the correct visual.
 
 ## Bibliography
 
@@ -61,13 +63,16 @@ Hard rule: the target venue's official current template and author instructions 
 - Check that floats do not break section logic.
 - Confirm PDF fonts are embedded if the venue requires it.
 - Confirm final PDF page count.
+- When the source is submitted as an archive, extract and compile that exact archive in a separate directory; verify its PDF page count and essential cross-references against the delivered PDF.
 
 ## Revision Package
 
-- Response letter addresses every reviewer comment.
+- If a response letter is requested or submitted, it addresses every reviewer comment.
 - Manuscript changes are traceable by section/page/line where possible.
 - New experiments, figures, tables, and citations are described in the response.
 - Claims in the response match the revised manuscript.
+- Recheck every claimed page, figure, table, and equation location after the final compilation, especially if floats moved during revision.
+- The files named in the submission email match the actual attachments and the venue's requested PDF/source/response deliverables; do not describe an optional response file as attached unless it is included.
 
 ## Final Sanity Check
 
