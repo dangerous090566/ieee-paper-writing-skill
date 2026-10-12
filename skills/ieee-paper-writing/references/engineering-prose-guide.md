@@ -1,26 +1,20 @@
 # Engineering Prose Guide
 
-Use this reference for IEEE engineering papers when the task is to improve academic writing quality, reviewer-facing prose, paragraph flow, claim strength, or English expression. It is distilled from the installed `engineering-paper-skills` suite, especially `engineering-writing` and `engineering-polishing`.
+Use this reference for engineering-specific wording, claim strength, terminology, and reviewer-facing prose. Use `argument-and-flow-guide.md` when the problem is the paper's argument or the progression within and between paragraphs. Source history is recorded in `source-provenance.md`.
 
 ## Core Stance
 
 - Write final manuscript prose in English unless the user explicitly requests another language.
 - Preserve evidence boundaries: do not invent methods, datasets, experiments, metrics, numbers, citations, mechanisms, novelty, robustness, limitations, or deployment claims.
-- Write the argument before polishing sentences.
 - Every claim should have a visible route to a model detail, equation, figure, table, experiment, diagnostic observation, or explicit boundary.
 - Prefer restrained engineering prose over promotional language.
 - If evidence is missing, downgrade the claim or mark the gap; do not make the paragraph sound more certain than the paper supports.
 
-## Paragraph Workflow
+## Local Prose Check
 
-1. Identify the section and paragraph job.
-2. Extract the paper object: system, controller, model, algorithm, experiment, metric, or failure mode.
-3. Map claim to evidence and boundary.
-4. Draft or revise the paragraph around one reader task.
-5. Self-edit once for generic frames, vague subjects, claim inflation, and sentence role.
-6. Preserve terms, variables, units, and notation exactly unless the user asks to rename them.
+For a bounded wording edit, identify the technical object, the evidence for the claim, and its boundary. Then revise vague subjects, generic frames, claim inflation, and sentence structure. Preserve terms, variables, units, and notation unless the user asks to change them.
 
-A paragraph is stable enough for polishing only if at least three of these are clear: paragraph job, main claim, evidence anchor, and boundary. If fewer than three are clear, diagnose the logic before offering a final polish.
+If the paragraph's job, main claim, or evidence is unclear, diagnose that gap before treating a fluent rewrite as final. For substantive restructuring, use `argument-and-flow-guide.md` to plan the paragraph and its neighbors.
 
 ## Engineering Style Rules
 
@@ -30,8 +24,7 @@ A paragraph is stable enough for polishing only if at least three of these are c
 - Avoid excessive nominalization when a verb is clearer.
 - Keep one technical term per concept across title, abstract, figures, tables, and sections.
 - Do not vary technical names just for style. Use sentence variation around stable terms instead of synonym drift.
-- Use transitions to state relations, not decoration: `In contrast`, `Consistent with this`, `As a result`, `This result is limited to`.
-- Avoid repeated crutch transitions such as `Specifically` and generic openings such as `X remains challenging` when a concrete bottleneck is available.
+- Avoid repeated crutch transitions such as `Specifically` and generic openings such as `X remains challenging` when a concrete bottleneck is available. The argument guide governs transitions between ideas.
 
 ## Anti-Generic Repairs
 
@@ -66,14 +59,6 @@ For CBF/control papers, distinguish carefully between:
 
 ## Section Patterns
 
-### Abstract
-
-Use a compact sequence: problem, gap, method core, evidence, bounded implication. The final sentence should be scope-aware, not a disclaimer.
-
-### Introduction
-
-Move from the operational difficulty to the technical bottleneck, then to why existing approaches are insufficient and why the proposed formulation is motivated. Put the main contribution before the paper organization paragraph.
-
 ### Methods
 
 Methods should define a reader path, not a module directory. Before formulas, explain why the object or signal matters. A useful order is:
@@ -83,7 +68,7 @@ Methods should define a reader path, not a module directory. Before formulas, ex
 3. mechanism blocks, one bottleneck per block;
 4. execution, safety, switching, feasibility, or operating boundary.
 
-Each subsection should close by telling the reader why the next object or constraint is needed.
+Make the dependency between objects or constraints explicit where the reader would otherwise have to infer it.
 
 ### Theory
 
@@ -99,20 +84,8 @@ Tie major deltas to component roles or failure modes. Do not claim causal mechan
 
 ### Conclusion
 
-Recover method, strongest evidence, bounded takeaway, and future work derived from the failure regime. Avoid ending with a vague inventory of limitations.
+Recover method, strongest evidence, and a bounded takeaway. Include future work when it follows from a specific unresolved limitation; avoid ending with a vague inventory of limitations.
 
-## Output Defaults
+## Output
 
-For substantial writing or rewriting tasks, provide manuscript prose first, then short notes:
-
-```text
-Draft
-[English manuscript prose]
-
-Why this works
-- Paragraph job:
-- Evidence used:
-- Boundary:
-```
-
-If the user asks for output only, provide only the manuscript prose unless doing so would hide an unsupported claim.
+Lead with the requested manuscript prose. Add short diagnostic notes only when they help the user evaluate a substantive change or see an evidence gap. Keep those notes outside the manuscript text.

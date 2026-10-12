@@ -8,19 +8,17 @@ Draft last when possible. Keep it specific, technical, and searchable. Prefer co
 
 Write after the main results are stable. Use one compact paragraph unless the venue requires a structured abstract.
 
-Template logic:
-
-`[Problem/context]. [Specific gap]. [This paper proposes method X]. [Mechanism or key idea]. [Evaluation setting]. [Best quantitative result]. [Implication].`
+Cover the problem, specific gap, approach, distinguishing mechanism, evaluation setting, strongest supported result, and bounded implication as space and evidence allow. These are information functions, not a fixed sentence template.
 
 ## Introduction
 
-Draft the introduction around a narrowing funnel:
+Build a narrowing argument from the following functions, using as many paragraphs as the paper needs:
 
 1. Define the problem and its importance.
 2. Explain why existing approaches are insufficient.
 3. State the proposed idea and why it addresses the gap.
 4. List contributions as verifiable claims.
-5. Preview evidence and paper organization.
+5. Preview the strongest evidence; include paper organization only if it helps navigation or the venue expects it.
 
 Contribution statements should use verbs such as propose, derive, design, prove, implement, evaluate, or release.
 
@@ -60,7 +58,7 @@ Organize experiments around claims:
 - Robustness/sensitivity: stress conditions.
 - Runtime or resource usage: if efficiency is claimed.
 
-Keep evaluation wording objective. Interpretation belongs in the discussion or in short result-specific comments.
+State the finding and its immediate, evidence-supported interpretation beside the result. Reserve broader implications and untested mechanisms for the discussion.
 
 ## Discussion
 
@@ -79,15 +77,3 @@ Figure caption pattern:
 Table caption pattern:
 
 `What is compared, on what metric, and under what setting.`
-
-## Reviewer Response
-
-For each reviewer comment:
-
-1. Quote or summarize the comment.
-2. Thank the reviewer.
-3. State the change or explain why no change was made.
-4. Point to exact section, page, paragraph, equation, figure, or table.
-5. Include revised manuscript text when useful.
-
-Maintain a calm, factual tone. Do not argue from authority; argue from evidence and manuscript changes.

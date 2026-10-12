@@ -30,7 +30,7 @@ Hard rule: the target venue's official current template and author instructions 
 - Citations use numbered brackets and appear in citation order if required by the bibliography style.
 - Figures are referenced as `Fig. X`.
 - Tables are referenced as `Table X` or `Table I` according to the template style.
-- Equations are numbered only when referenced.
+- Equation numbering follows the venue template, and every in-text equation reference resolves.
 - Acronyms are defined at first use.
 - Units follow consistent SI or venue-accepted conventions.
 - All labels and references compile without `??`.

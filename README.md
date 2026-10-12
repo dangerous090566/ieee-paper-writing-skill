@@ -7,6 +7,7 @@ This skill is designed for IEEE journal and conference papers, especially engine
 - IEEE-style writing and LaTeX manuscript workflows
 - strict venue-template authority rules
 - engineering-paper prose polishing
+- manuscript argument and paragraph-flow checks
 - claim-evidence boundary checks
 - figure, table, citation, and submission-readiness guidance
 
@@ -15,7 +16,12 @@ This skill is designed for IEEE journal and conference papers, especially engine
 - **IEEE manuscript drafting**
   - Draft or revise abstracts, introductions, related work, methods, theory, experiments, results, discussions, conclusions, and contribution paragraphs.
   - Keep IEEE-style structure: problem, gap, method, evidence, engineering implication, and bounded conclusion.
-  - Prefer LaTeX source as the default deliverable for IEEE/English paper tasks.
+  - Return bounded prose edits inline; use LaTeX source for full-manuscript or LaTeX-project work.
+
+- **Argument and flow**
+  - Map each main claim to the method or derivation that makes it testable, the evidence that supports it, and the conclusion it permits.
+  - Plan paragraph functions and check whether adjacent paragraphs advance the argument without missing premises or cosmetic transitions.
+  - Check that the Introduction's promises, primary results, displays, Abstract, and Conclusion tell the same evidence-bounded story.
 
 - **Venue-template compliance**
   - Treat the target journal, conference, track, and submission stage as the formatting authority.
@@ -24,7 +30,7 @@ This skill is designed for IEEE journal and conference papers, especially engine
 
 - **Engineering prose improvement**
   - Polish paragraphs into restrained, reviewer-facing engineering English.
-  - Improve paragraph flow, sentence roles, transition logic, terminology consistency, and native academic expression.
+  - Improve sentence roles, terminology consistency, and natural academic expression after the argument is sound.
   - Reduce generic or AI-like phrasing, promotional wording, and unsupported adjectives.
 
 - **Claim-evidence control**
@@ -67,7 +73,7 @@ This skill is designed for IEEE journal and conference papers, especially engine
 2. User-provided official templates, class files, Overleaf exports, zip packages, or author guideline PDFs are treated as the formatting authority.
 3. Bundled IEEE starter files are drafting aids only, not submission authorities.
 4. Engineering prose should be restrained, evidence-bound, and reviewer-facing.
-5. Main paper deliverables default to LaTeX source and, when possible, compiled PDF.
+5. Full-manuscript or LaTeX-project deliverables use LaTeX source and, when possible, a compiled PDF; local prose edits follow the user's requested format.
 
 ## Repository Layout
 
@@ -149,4 +155,5 @@ python install-skill-from-github.py --repo <owner>/<repo> --path skills/ieee-pap
 
 - This repository does not include venue-specific official IEEE templates. Always verify and use the current official template for the exact journal, conference, track, and submission stage.
 - The included starter `.tex` files are only fallback drafting aids.
+- Faithful paper translation is handled by the separate `literature-translation` skill; this skill contributes IEEE formatting checks when needed.
 - No local machine paths, private project files, or manuscript content are required by this skill.
